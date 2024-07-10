@@ -30,8 +30,9 @@ Download the Isaac Gym Preview 4 release from the website, then follow the insta
 
 Ensure that Isaac Gym works on your system by running one of the examples from the python/examples directory, like joint_monkey.py. Follow troubleshooting steps described in the Isaac Gym Preview 4 install instructions if you have any trouble running the samples.
 
-Once Isaac Gym is installed and samples work within your current python environment, install this repo:
+Once Isaac Gym is installed and samples work within your current python environment, install the IsaacGymEnvs repo:
 ```
+cd IsaacGymEnvs
 pip install -e .
 ```
 The directory should look like this:    
