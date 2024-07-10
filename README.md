@@ -43,7 +43,7 @@ The directory should look like this:
 ### Download the repository
 asd
 ### Download the object dataset
-Create a new folder named 'egad_objects' inside the following folder: /workspace/IsaacGymEnvs/assets/urdf
+Create a new folder named 'egad_objects' inside the following folder: '/workspace/IsaacGymEnvs/assets/urdf'
 ```
 cd /workspace/IsaacGymEnvs/assets/urdf
 mkdir egad_objects
