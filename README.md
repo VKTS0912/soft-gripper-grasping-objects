@@ -5,16 +5,15 @@ This is the codebase for training soft grippers to grasp different objects in si
 In this project, we want to train a policy that can generalize the grasping task to different types of soft-grippers and different object shapes. The task is currently being trained using only the gripper, without attachment to the robot arm. In the future, we aim to develop this further to integrate it with the real Franka robot arm.        
 
 <p align="center">
-  <img src="https://github.com/VKTS0912/soft-gripper-grasping-objects/assets/88523677/239c08c7-c0df-4cb1-b4b0-ac135851a63e)">
+  <img src="https://github.com/VKTS0912/soft-gripper-grasping-objects/assets/88523677/cb9ad3bd-6e7b-4c31-9dbd-6e95cadb8103">
 </p>
-
 
 ## Description
 
 Soft grippers are an emerging technology in robotic manipulation, offering a gentle and adaptable approach to grasping objects of various shapes, sizes, and fragilities. Unlike rigid grippers, soft grippers utilize flexible materials and compliant mechanisms, allowing them to conform to the surface of objects and apply uniform pressure without causing damage. This capability makes them ideal for applications in delicate tasks such as handling food, medical supplies, or other sensitive items.
 
 However, training soft grippers to perform precise and reliable grasping tasks presents significant challenges. Traditional control methods often struggle to accommodate the complex dynamics and high degrees of freedom inherent in soft robotic systems. To address these challenges, the teacher-student paradigm has emerged as a powerful framework for training soft grippers effectively. 
-<img align="right" src="https://github.com/VKTS0912/soft-gripper-grasping-objects/assets/88523677/cb9ad3bd-6e7b-4c31-9dbd-6e95cadb8103">
+<img align="right" src="https://github.com/VKTS0912/soft-gripper-grasping-objects/assets/88523677/239c08c7-c0df-4cb1-b4b0-ac135851a63e)">
 
 Such a two-stage teacher-student training paradigm, where first a control policy is trained via Reinforcement Learning with full state information (teacher) and then a second student policy trained via supervised learning to mimic the teacher has been successfully used for many applications. For the grasping task of this project, the idea is to train the teacher policy using deep RL with privileged state information that can be extracted in simulation, and after that, a student policy can be trained to imitate the teacher using sensory inputs from the camera.
 
