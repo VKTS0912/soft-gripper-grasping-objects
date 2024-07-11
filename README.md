@@ -109,8 +109,8 @@ Hit the ``v`` key while running to disable viewer updates and allow training to 
 python train.py task=SoftGripper headless=True
 ```
 * Plot the results           
-We use ``wandb`` to plot the additional results while training for viewing and debugging. Modify the task file by uncommenting the lines in function ``def compute_reward(self, actions)``.              
-Each task subclasses the VecEnv base class in ``isaacgymenvs/tasks/base/vec_task.py``. Open the file and in ``def allocate_buffers(self)``, add these lines:
+We use ``wandb`` to plot additional results while training for viewing and debugging. Modify the task file by uncommenting the lines in function ``def compute_reward(self, actions)``.                  
+Each task subclasses the VecEnv base class in ``isaacgymenvs/tasks/base/vec_task.py``. Open this file and in ``def allocate_buffers(self)``, add these lines:
 ```
 self.env_steps = 0
 self.successes = torch.zeros(self.num_envs, dtype=torch.float,device=self.device)
