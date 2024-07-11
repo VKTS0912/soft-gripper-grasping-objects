@@ -1,7 +1,7 @@
 # Soft Gripper Grasping Objects
 
 This is the codebase for training soft grippers to grasp different objects in simulation.     
-In this project, we want to train a policy that can generalize the grasping task to different types of soft-grippers and different object shapes.  
+In this project, we want to train a policy that can generalize the grasping task to different types of soft-grippers and different object shapes. The task is currently being trained using only the gripper, without attachment to the robot arm. In the future, we aim to develop this further to integrate it with the real Franka robot arm.        
  
 
 ## Description
