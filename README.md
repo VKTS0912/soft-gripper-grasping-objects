@@ -149,12 +149,8 @@ Contributors names and contact info
 [Son Vo] [email](mailto:son.vkt202768@sis.hust.edu.vn)      
 [Khuyen Gia Pham] [email](mailto:21khuyen.pg@vinuni.edu.vn)
 
-## License
-
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
-
 ## Acknowledgments
-I would like to express my sincere gratitude to my supervisor, Acar Cihan, for his invaluable guidance and support throughout this project. His insights and expertise have been instrumental in the successful completion of our work.
+I would like to express my sincere gratitude to my supervisor, [Acar Cihan](https://scholar.google.co.nz/citations?user=4oQMp4EAAAAJ&hl=en), for his invaluable guidance and support throughout this project. His insights and expertise have been instrumental in the successful completion of our work.
 
 Please review these documents for reference.
 * [Visual Dexterity](https://arxiv.org/abs/2211.11744)
