@@ -10,7 +10,8 @@ In this project, we want to train a policy that can generalize the grasping task
 
 ## Description
 
-Soft grippers are an emerging technology in robotic manipulation, offering a gentle and adaptable approach to grasping objects of various shapes, sizes, and fragilities. Unlike rigid grippers, soft grippers utilize flexible materials and compliant mechanisms, allowing them to conform to the surface of objects and apply uniform pressure without causing damage. This capability makes them ideal for applications in delicate tasks such as handling food, medical supplies, or other sensitive items.
+Soft grippers are an emerging technology in robotic manipulation, offering a gentle and adaptable approach to grasping objects of various shapes, sizes, and fragilities. Unlike rigid grippers, soft grippers utilize flexible materials and compliant mechanisms, allowing them to conform to the surface of objects and apply uniform pressure without causing damage. This capability makes them ideal for applications in delicate tasks such as handling food, medical supplies, or other sensitive items.      
+
 <img align="right" src="https://github.com/VKTS0912/soft-gripper-grasping-objects/assets/88523677/239c08c7-c0df-4cb1-b4b0-ac135851a63e)">
 
 However, training soft grippers to perform precise and reliable grasping tasks presents significant challenges. Traditional control methods often struggle to accommodate the complex dynamics and high degrees of freedom inherent in soft robotic systems. To address these challenges, the teacher-student paradigm has emerged as a powerful framework for training soft grippers effectively.     
