@@ -105,8 +105,8 @@ command to run if program contains helper info
 
 Contributors names and contact info
 
-Son Vo [email](mailto:son.vkt202768@sis.hust.edu.vn)
-Khuyen Gia Pham [email](mailto:21khuyen.pg@vinuni.edu.vn)
+[[Son Vo]] [email](mailto:son.vkt202768@sis.hust.edu.vn)      
+[[Khuyen Gia Pham]] [email](mailto:21khuyen.pg@vinuni.edu.vn)
 
 ## License
 
