@@ -28,7 +28,7 @@ So far, this project focuses on the initial stage of this process: training the 
 
 Download the Isaac Gym Preview 4 release from the [website](https://developer.nvidia.com/isaac-gym), then follow the installation instructions in the documentation. It is highly recommended to use a conda environment to simplify set up.     
 
-Ensure that Isaac Gym works on your system by running one of the examples from the python/examples directory, like joint_monkey.py. Follow troubleshooting steps described in the Isaac Gym Preview 4 install instructions if you have any trouble running the samples.
+Ensure that Isaac Gym works on your system by running one of the examples from the ``python/examples`` directory, like ``joint_monkey.py``. Follow troubleshooting steps described in the Isaac Gym Preview 4 install instructions if you have any trouble running the samples.
 
 Once Isaac Gym is installed and samples work within your current python environment, install the IsaacGymEnvs repo:
 ```
@@ -97,7 +97,7 @@ isaacgym_task_map = {
 Every task requires config files for training. Move the downloaded task-config file ``SoftGripper.yaml`` to ``/IsaacGymEnvs/isaacgymenvs/cfg/task``, and the train-config file ``SoftGripperPPO.yaml`` to ``/IsaacGymEnvs/isaacgymenvs/cfg/train``.        
 Here we use the default Isaac Gym Benchmark config for the PPO algorithm used for training the teacher policy.            
 ### Executing program
-* How to run the program
+* How to run the program        
 To train the grasping policy, run this line:
 ```
 cd IsaacGymEnvs/isaacgymenvs
@@ -108,7 +108,7 @@ Hit the ``v`` key while running to disable viewer updates and allow training to 
 ```
 python train.py task=SoftGripper headless=True
 ```
-* Plot the results 
+* Plot the results           
 We use ``wandb`` to plot the additional results while training for viewing and debugging. Modify the task file by uncommenting the lines in function ``def compute_reward(self, actions)``.              
 Each task subclasses the VecEnv base class in ``isaacgymenvs/tasks/base/vec_task.py``. Open the file and in ``def allocate_buffers(self)``, add these lines:
 ```
@@ -122,7 +122,7 @@ python train.py task=SoftGripper wandb_activate=True wandb_entity=[your_wandb_ac
 ```
 ### Pre-trained models
 We provide the pre-trained model for the teacher in the repo. The model was trained using the gripper assets in this repo.
-* Usage
+* Usage      
 Make sure you use the pre-generated gripper asset unzipped from ``soft-gripper.zip``.
 Whenever you train a task, checkpoints are saved in the folder ``runs/EXPERIMENT_NAME/nn``. If you haven't trained any task and folder ``runs`` is not created yet, create it first by:
 ```
