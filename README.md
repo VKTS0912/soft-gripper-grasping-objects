@@ -62,8 +62,8 @@ The object .obj files must be found in a folder directory like this:
 ------ egad_train_set
 ```
 Modify line 9 and 44 in file 'gen_objects.py' to make the correct folder workspace (replace ``workspace`` with the correct root directory on your machine):       
-``9. object_folder = '/workspace/IsaacGymEnvs/assets/urdf/egad_objects/egadtrainset/egad_train_set'      
-44. output_folder = f"/workspace/IsaacGymEnvs/assets/urdf/egad_objects"``      
+``9. object_folder = '/workspace/IsaacGymEnvs/assets/urdf/egad_objects/egadtrainset/egad_train_set'            
+44. output_folder = f"/workspace/IsaacGymEnvs/assets/urdf/egad_objects"``          
 Run the file and you will see the created urdf files of the object assets located in ``/workspace/IsaacGymEnvs/assets/urdf/egad_objects``         
 ## Set up the task
 ### Prepare gripper assets
@@ -81,7 +81,7 @@ Locate the folder named 'gripper_file_base' that is downloaded from the reposito
 ```
 Modify the file 'gen_grippers.py' to make the correct folder workspace (replace ``workspace`` with the correct root directory on your machine).          
 Then run the file and you will see the created urdf files of grippers located in ``/workspace/IsaacGymEnvs/assets/urdf/soft_gripper/gen_grippers``.         
-** If you want to use the pre-generated gripper assets, unzip the file 'soft-gripper.zip' which can be downloaded from this repo instead of creating this folder as above.        
+** If you want to use the pre-generated gripper assets, unzip the file ``soft-gripper.zip`` which can be downloaded from this repo instead of creating this folder as above.          
 ### Prepare the training environment             
 
 ### Executing program
@@ -94,13 +94,13 @@ code blocks for commands
 ### Pre-trained models
 We provide the pre-trained model for the teacher in the repo. The model was trained using the gripper assets in this repo.
 * Usage
-Make sure you use the pre-generated gripper asset unzipped from 'soft-gripper.zip'.
+Make sure you use the pre-generated gripper asset unzipped from ``soft-gripper.zip``.
 Whenever you train a task, checkpoints are saved in the folder ``runs/EXPERIMENT_NAME/nn``. If you haven't trained any task and folder 'runs' is not created yet, create it first by:
 ```
 cd IsaacGymEnv/isaacgymenvs
 mkdir runs
 ```
-Move the folder 'Pretrained' to ``/workspace/IsaacGymEnvs/isaacgymenvs/runs``.      
+Move the folder ``Pretrained`` to ``/workspace/IsaacGymEnvs/isaacgymenvs/runs``.       
 
 ## Help
 
