@@ -5,8 +5,9 @@ This is the codebase for training soft grippers to grasp different objects in si
 In this project, we want to train a policy that can generalize the grasping task to different types of soft-grippers and different object shapes. The task is currently being trained using only the gripper, without attachment to the robot arm. In the future, we aim to develop this further to integrate it with the real Franka robot arm.        
 
 <p align="center">
-  ![image](https://github.com/VKTS0912/soft-gripper-grasping-objects/assets/88523677/cb9ad3bd-6e7b-4c31-9dbd-6e95cadb8103)
+  <img width="460" height="300" src="https://github.com/VKTS0912/soft-gripper-grasping-objects/assets/88523677/cb9ad3bd-6e7b-4c31-9dbd-6e95cadb8103">
 </p>
+![image](https://github.com/VKTS0912/soft-gripper-grasping-objects/assets/88523677/cb9ad3bd-6e7b-4c31-9dbd-6e95cadb8103)
 
 ## Description
 
