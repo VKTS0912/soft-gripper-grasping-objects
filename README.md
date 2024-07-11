@@ -1,6 +1,6 @@
 # Soft Gripper Grasping Objects
 
-<video src="https://github.com/VKTS0912/soft-gripper-grasping-objects/assets/88523677/ae3aeb89-4173-4483-b902-7afff6b53411" width="320" height="240" controls></video>
+<video src="https://github.com/VKTS0912/soft-gripper-grasping-objects/assets/88523677/ae3aeb89-4173-4483-b902-7afff6b53411" width="150" height="100" controls></video>
 
 This is the codebase for training soft grippers to grasp different objects in simulation.     
          
