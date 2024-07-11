@@ -1,6 +1,7 @@
 # Soft Gripper Grasping Objects
 
-This is the codebase for training soft grippers to grasp different objects in simulation
+This is the codebase for training soft grippers to grasp different objects in simulation.     
+In this project, we want to train a policy that can generalize the grasping task to different types of soft-grippers and different object shapes.  
  
 
 ## Description
@@ -135,16 +136,9 @@ Load the trained checkpoint and see the pre-trained model:
 cd IsaacGymEnvs/isaacgymenvs
 python train.py task=SoftGripper checkpoint=runs/Pretrained/soft_gripper_pretrained/nn/last_SoftGripper_ep_10000_rew__2084.56_.pth test=True num_envs=50
 ```
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
-
 ## Authors
 
-Contributors names and contact info
+Contributors names and contact info            
 
 [Son Vo] [email](mailto:son.vkt202768@sis.hust.edu.vn)      
 [Khuyen Gia Pham] [email](mailto:21khuyen.pg@vinuni.edu.vn)
