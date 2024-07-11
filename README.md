@@ -105,18 +105,17 @@ command to run if program contains helper info
 
 Contributors names and contact info
 
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+Son Vo [email](mailto:son.vkt202768@sis.hust.edu.vn)
+Khuyen Gia Pham [email](mailto:21khuyen.pg@vinuni.edu.vn)
 
 ## License
 
 This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
 
 ## Acknowledgments
+I would like to express my sincere gratitude to my supervisor, Acar Cihan, for his invaluable guidance and support throughout this project. His insights and expertise have been instrumental in the successful completion of our work.
 
-Please review these for reference.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [dbader](https://github.com/dbader/readme-template)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
+Please review these documents for reference.
+* [Visual Dexterity](https://arxiv.org/abs/2211.11744)
+* [Hardware Conditioned Policy](https://arxiv.org/abs/1811.09864)
+
