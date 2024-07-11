@@ -41,6 +41,7 @@ The directory should look like this:
 ---- IsaacGymEnvs
 ---- isaacgym
 ```
+Please review the Isaac Gym Benchmark Environments from the [website](https://github.com/isaac-sim/IsaacGymEnvs) for details on setting up the environment and training example tasks.   
 ### Download the repository
 ```
 git clone https://github.com/VKTS0912/soft-gripper-grasping-objects.git
@@ -90,8 +91,8 @@ code blocks for commands
 ```
 ### Pre-trained models
 We provide the pre-trained models for the teacher in the repo. 
-* Usage
-Move the folder 'Pretrained' to /workspace/IsaacGymEnvs/
+* Usage     
+Move the folder 'Pretrained' to '/workspace/IsaacGymEnvs/
 ## Help
 
 Any advise for common problems or issues.
@@ -112,7 +113,7 @@ This project is licensed under the [NAME HERE] License - see the LICENSE.md file
 
 ## Acknowledgments
 
-Inspiration, code snippets, etc.
+Please review these for reference.
 * [awesome-readme](https://github.com/matiassingers/awesome-readme)
 * [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
 * [dbader](https://github.com/dbader/readme-template)
