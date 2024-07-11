@@ -61,7 +61,7 @@ The object .obj files must be found in a folder directory like this:
 ----- egadtrainset
 ------ egad_train_set
 ```
-Modify line 9 and 44 in file ``gen_objects.py`` to make the correct folder workspace (replace ``workspace`` with the correct root directory on your machine):       
+Modify the following line 9 and 44 in file ``gen_objects.py`` to make the correct folder workspace (replace ``workspace`` with the correct root directory on your machine):             
 ``9. object_folder = '/workspace/IsaacGymEnvs/assets/urdf/egad_objects/egadtrainset/egad_train_set'``               
 ``44. output_folder = f"/workspace/IsaacGymEnvs/assets/urdf/egad_objects"``          
 Run the file and you will see the created urdf files of the object assets located in ``/workspace/IsaacGymEnvs/assets/urdf/egad_objects``.             
@@ -84,7 +84,7 @@ Then run the file and you will see the created urdf files of grippers located in
 ** If you want to use the pre-generated gripper assets, unzip the file ``soft-gripper.zip`` which can be downloaded from this repo instead of creating the folder as above.          
 ### Prepare the training environment  
 #### Tasks
-Source code for tasks can be found in ``IsaacGymEnvs/isaacgymenvs/tasks``. Move the task file ``soft_gripper.py`` downloaded from the repo to this folder. 
+Source code for tasks can be found in ``IsaacGymEnvs/isaacgymenvs/tasks``. Move the task file ``soft_gripper.py`` downloaded from the repo to this folder.       
 In this folder, open ``__init__.py`` and add these lines to initiate the task:
 ```
 from .soft_gripper import SoftGripper
@@ -94,13 +94,31 @@ isaacgym_task_map = {
 }
 ```
 #### Config
-Every task requires config files for training. Move the downloaded task-config file ``SoftGripper.yaml`` to ``/IsaacGymEnvs/isaacgymenvs/cfg/task``, and the train-config file ``SoftGripperPPO.yaml`` to ``/IsaacGymEnvs/isaacgymenvs/cfg/train``.
+Every task requires config files for training. Move the downloaded task-config file ``SoftGripper.yaml`` to ``/IsaacGymEnvs/isaacgymenvs/cfg/task``, and the train-config file ``SoftGripperPPO.yaml`` to ``/IsaacGymEnvs/isaacgymenvs/cfg/train``.        
+Here we use the default Isaac Gym Benchmark config for the PPO algorithm used for training the teacher policy.            
 ### Executing program
-
 * How to run the program
-* Step-by-step bullets
+To train the grasping policy, run this line:
 ```
-code blocks for commands
+cd IsaacGymEnvs/isaacgymenvs
+python train.py task=SoftGripper
+```
+The training should be running now. By default, the task is training multiple different scale of soft grippers to grasp a cube. You can modify the amount of grippers and objects in the task file to test the policy.     
+Hit the ``v`` key while running to disable viewer updates and allow training to proceed faster. Hit ``v`` again to resume viewing. Or you can train headlessly:
+```
+python train.py task=SoftGripper headless=True
+```
+* Plot the results 
+We use ``wandb`` to plot the additional results while training for viewing and debugging. Modify the task file by uncommenting the lines in function ``def compute_reward(self, actions)``.              
+Each task subclasses the VecEnv base class in ``isaacgymenvs/tasks/base/vec_task.py``. Open the file and in ``def allocate_buffers(self)``, add these lines:
+```
+self.env_steps = 0
+self.successes = torch.zeros(self.num_envs, dtype=torch.float,device=self.device)
+self.success_rate = torch.zeros(1, dtype=torch.float,device=self.device)
+```
+Make sure ``test`` is set to ``False`` in the task config file ``SoftGripper.yaml`` to plot the results while training. Then you can run this to sync your results to wandb:
+```
+python train.py task=SoftGripper wandb_activate=True wandb_entity=[your_wandb_account_name] wandb_project=[your_project_name]
 ```
 ### Pre-trained models
 We provide the pre-trained model for the teacher in the repo. The model was trained using the gripper assets in this repo.
