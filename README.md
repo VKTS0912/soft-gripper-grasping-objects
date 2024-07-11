@@ -42,7 +42,9 @@ The directory should look like this:
 ---- isaacgym
 ```
 ### Download the repository
-asd
+```
+git clone https://github.com/VKTS0912/soft-gripper-grasping-objects.git
+```
 ### Download the object dataset
 Create a new folder named 'egad_objects' inside the following folder: '/workspace/IsaacGymEnvs/assets/urdf'
 ```
@@ -76,7 +78,8 @@ Locate the folder named 'gripper_file_base' that is downloaded from the reposito
 ---- gripper_file_base
 ```
 Modify the file 'gen_grippers.py' to make the correct folder workspace (replace 'workspace' with the correct root directory on your machine).          
-Then run the file and you will see the created urdf files of grippers located in '/workspace/IsaacGymEnvs/assets/urdf/soft_gripper/gen_grippers'     
+Then run the file and you will see the created urdf files of grippers located in '/workspace/IsaacGymEnvs/assets/urdf/soft_gripper/gen_grippers'.      
+If you want to use the pre-generated gripper assets,   
 
 ### Executing program
 
@@ -85,7 +88,10 @@ Then run the file and you will see the created urdf files of grippers located in
 ```
 code blocks for commands
 ```
-
+### Pre-trained models
+We provide the pre-trained models for the teacher in the repo. 
+* Usage
+Move the folder 'Pretrained' to /workspace/IsaacGymEnvs/
 ## Help
 
 Any advise for common problems or issues.
@@ -99,14 +105,6 @@ Contributors names and contact info
 
 ex. Dominique Pizzie  
 ex. [@DomPizzie](https://twitter.com/dompizzie)
-
-## Version History
-
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
-* 0.1
-    * Initial Release
 
 ## License
 
