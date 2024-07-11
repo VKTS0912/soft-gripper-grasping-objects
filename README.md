@@ -81,7 +81,8 @@ Locate the folder named 'gripper_file_base' that is downloaded from the reposito
 ```
 Modify the file 'gen_grippers.py' to make the correct folder workspace (replace 'workspace' with the correct root directory on your machine).          
 Then run the file and you will see the created urdf files of grippers located in '/workspace/IsaacGymEnvs/assets/urdf/soft_gripper/gen_grippers'.      
-If you want to use the pre-generated gripper assets,   
+If you want to use the pre-generated gripper assets,      
+### Prepare the training environment             
 
 ### Executing program
 
@@ -105,8 +106,8 @@ command to run if program contains helper info
 
 Contributors names and contact info
 
-[[Son Vo]] [email](mailto:son.vkt202768@sis.hust.edu.vn)      
-[[Khuyen Gia Pham]] [email](mailto:21khuyen.pg@vinuni.edu.vn)
+[Son Vo] [email](mailto:son.vkt202768@sis.hust.edu.vn)      
+[Khuyen Gia Pham] [email](mailto:21khuyen.pg@vinuni.edu.vn)
 
 ## License
 
