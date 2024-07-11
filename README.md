@@ -26,7 +26,7 @@ So far, this project focuses on the initial stage of this process: training the 
 
 ### Download packages
 
-Download the Isaac Gym Preview 4 release from the website, then follow the installation instructions in the documentation. It is highly recommended to use a conda environment to simplify set up.
+Download the Isaac Gym Preview 4 release from the [website](https://developer.nvidia.com/isaac-gym), then follow the installation instructions in the documentation. It is highly recommended to use a conda environment to simplify set up.     
 
 Ensure that Isaac Gym works on your system by running one of the examples from the python/examples directory, like joint_monkey.py. Follow troubleshooting steps described in the Isaac Gym Preview 4 install instructions if you have any trouble running the samples.
 
@@ -43,7 +43,8 @@ The directory should look like this:
 ```
 Please review the Isaac Gym Benchmark Environments from the [website](https://github.com/isaac-sim/IsaacGymEnvs) for details on setting up the environment and training example tasks.   
 ### Download the repository
-```
+Please clone the repo to your root/home folder.       
+```     
 git clone https://github.com/VKTS0912/soft-gripper-grasping-objects.git
 ```
 ### Download the object dataset
