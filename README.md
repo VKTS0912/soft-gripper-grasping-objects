@@ -130,7 +130,7 @@ Make sure ``test`` is set to ``False`` in the task config file ``SoftGripper.yam
 python train.py task=SoftGripper wandb_activate=True wandb_entity=[your_wandb_account_name] wandb_project=[your_project_name]
 ```
 ### Pre-trained models
-We provide the pre-trained model for the teacher in the repo. The model was trained using the gripper assets in this repo.
+We provide the pre-trained model for the teacher in the repo. The model was trained using the gripper assets in this repo, for the task of grasping a cube.      
 * Usage      
 You can test the model with the pre-generated gripper asset unzipped from ``soft-gripper.zip`` which we use for training. Or you can load different gripper assets and see the policy's performance.        
 Whenever you train a task, checkpoints are saved in the folder ``runs/EXPERIMENT_NAME/nn``. If you haven't trained any task and folder ``runs`` is not created yet, create it first by:
