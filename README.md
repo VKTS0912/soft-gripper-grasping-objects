@@ -22,7 +22,7 @@ Such a two-stage teacher-student training paradigm, where first a control policy
 
 However, a significant challenge in robotic learning is the sim-to-real gap, the discrepancy between simulated environments and real-world conditions. While simulations provide a controlled and cost-effective platform for training robotic policies, they often fail to capture all the nuances of the physical world. Differences in sensor noise, friction, material properties, and dynamic interactions can lead to performance degradation when transferring a policy trained in simulation to a real-world robot.
 
-So far, this project focuses on the initial stage of this process: training the teacher policy in simulation. By utilizing advanced simulation tools, this project aims to develop a robust and effective teacher policy that can demonstrate optimal grasping strategies which can generalize to different scale of soft grippers and objects.
+So far, this project focuses on the initial stage of this process: training the teacher policy in simulation. By utilizing advanced simulation tools, this project aims to develop a robust and effective teacher policy that can demonstrate optimal grasping strategies that can generalize to different scales of soft grippers and objects.
 
 ## Installation
 
@@ -37,9 +37,9 @@ So far, this project focuses on the initial stage of this process: training the 
 
 Download the Isaac Gym Preview 4 release from the [website](https://developer.nvidia.com/isaac-gym), then follow the installation instructions in the documentation. It is highly recommended to use a conda environment to simplify set up.     
 
-Ensure that Isaac Gym works on your system by running one of the examples from the ``python/examples`` directory, like ``joint_monkey.py``. Follow troubleshooting steps described in the Isaac Gym Preview 4 install instructions if you have any trouble running the samples.
+Ensure that Isaac Gym works on your system by running one of the examples from the ``python/examples`` directory, like ``joint_monkey.py``. Follow the troubleshooting steps described in the Isaac Gym Preview 4 install instructions if you have any trouble running the samples.
 
-Once Isaac Gym is installed and samples work within your current python environment, install the IsaacGymEnvs repo:
+Once Isaac Gym is installed and samples work within your current Python environment, install the IsaacGymEnvs repo:
 ```
 cd IsaacGymEnvs
 pip install -e .
@@ -152,7 +152,7 @@ Contributors names and contact info
 [Khuyen Gia Pham] [email](mailto:21khuyen.pg@vinuni.edu.vn)
 
 ## Acknowledgments
-I would like to express my sincere gratitude to my supervisor, [Acar Cihan](https://scholar.google.co.nz/citations?user=4oQMp4EAAAAJ&hl=en), for his invaluable guidance and support throughout this project. His insights and expertise have been instrumental in the successful completion of our work.
+I would like to express my sincere gratitude to my supervisor, [Acar Cihan](https://scholar.google.co.nz/citations?user=4oQMp4EAAAAJ&hl=en) ([Github](https://github.com/ases200q2?tab=overview&from=2024-12-01&to=2024-12-19)), for his invaluable guidance and support throughout this project. His insights and expertise have been instrumental in the successful completion of our work.
 
 Please review these documents for reference.
 * [Visual Dexterity](https://arxiv.org/abs/2211.11744)
